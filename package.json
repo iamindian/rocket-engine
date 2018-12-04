@@ -1,0 +1,15 @@
+{
+  "name": "trojan",
+  "version": "0.0.1",
+  "description": "implementation of trojan protocol",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "trojan"
+  ],
+  "author": "Jimmy",
+  "license": "MIT",
+  "devDependencies": {}
+}

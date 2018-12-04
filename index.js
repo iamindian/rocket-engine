@@ -86,6 +86,6 @@ server.on('close',()=>{
 server.on('error', (error) => {
 	console.log(error.stack);
 });
-server.listen(2080, () => {
+server.listen(parseInt(process.argv[2]), () => {
 	console.log(`server started on ${server.address().port}`);
 });

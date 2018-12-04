@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-console */
 let net = require('net');
 let socks = require('./socks');
@@ -74,6 +75,9 @@ server.on('connection', client => {
 	client.on('end', () => {
 		remote1.end();
 		console.log('received FIN packet');
+	});
+	client.on('timeout',()=>{
+		console.log('client is timeout');
 	});
 	client.on('error',(error)=>{
 		remote1.end();

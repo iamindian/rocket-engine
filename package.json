@@ -4,8 +4,8 @@
   "description": "implementation of trojan protocol",
   "main": "index.js",
   "scripts": {
-    "run": "node ./index.js 2080",
-    "dev": "nodemon ./index.js 2080"
+    "run": "node ./index.js 2080 127.0.0.1",
+    "dev": "nodemon ./index.js 2080 127.0.0.1"
   },
   "keywords": [
     "trojan"
